@@ -9,13 +9,13 @@ class Message {
         this.createdAt=date
         this.sender=nickname
     }
-    var message: String ="This is a message"
+    var message: String
         get()=field
         set(msg){
             field=msg
         }
     private lateinit var sender: String
-    var createdAt:Long =0
+    var createdAt:Long
         set(time){
             field=time
         }
