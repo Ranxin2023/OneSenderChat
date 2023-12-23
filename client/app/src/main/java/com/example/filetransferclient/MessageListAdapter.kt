@@ -37,9 +37,9 @@ class MessageListAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder> {
         private val utils:Utils=Utils()
 
         fun bind(message:Message) {
-            messageText.text=message.getMessage()
+            messageText.text=message.message
             // Format the stored timestamp into a readable String using method.
-            timeText.text=this.utils.formatDateTime(message.getCreateAt(), "America/Los_Angeles")
+            timeText.text=this.utils.formatDateTime(message.createdAt, "America/Los_Angeles")
         }
     }
 }
